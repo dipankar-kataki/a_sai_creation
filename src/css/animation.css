@@ -1,0 +1,12 @@
+.scaleanimation{
+    animation: scaleAnimation 8s ease-out infinite
+}
+
+@keyframes scaleAnimation {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}

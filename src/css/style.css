@@ -1,0 +1,30 @@
+.submenu{
+    display: none;
+    animation: submenuanimation 0.5s ease-out;
+}
+.submenu_container:hover .submenu{
+    display: block;
+}
+
+[data-aos="blur-in"] {
+    opacity: 0;
+    transition-property:  opacity;
+  
+    &.aos-animate {
+      opacity: 1;
+    }
+  }
+
+@keyframes submenuanimation{
+    0%{
+        transform:  translateY(20px);
+        opacity: 0;
+    }
+    90%{
+        transform: translateY(-3px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
