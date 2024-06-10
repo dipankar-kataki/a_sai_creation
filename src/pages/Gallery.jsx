@@ -4,12 +4,13 @@ import Footer from '../components/Footer'
 import GalleryHeader from '../components/GalleryHeader'
 import GallerySection from '../components/GallerySection'
 import EventHeader from '../components/EventHeader'
+import Header from '../components/Header'
 
 const Gallery = () => {
   return (
     <>
        
-        <EventHeader title={'Gallery'}/>
+        <Header title={'Gallery'}/>
         <GallerySection/>
        
     </>

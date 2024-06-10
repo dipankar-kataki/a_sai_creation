@@ -5,19 +5,30 @@ import OurClients from '../components/OurClients'
 import Appointment from '../components/Appointment'
 import { FaDotCircle } from "react-icons/fa";
 import Button from '../components/Button'
+import { Link } from 'react-router-dom'
 const Weddings = () => {
   return (
     <>
-        <EventHeader title={'Weddings'}/>
+        <div className={`h-[60vh] font-antic text-4xl text-white flex justify-center items-center bg-[linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url("/images/weddings/07.jpeg")] bg-cover bg-center`}>
+            <h1>Weddings</h1>
+         </div>
         <div className='px-4 lg:px-8 pt-16 pb-8 flex lg:flex-row flex-col-reverse gap-12'>
           <section className='lg:w-[20vw] w-full lg:block flex flex-col-reverse'>
-            <div  data-aos="blur-in" data-aos-once>
+          <div  data-aos="blur-in" data-aos-once>
               <h2 className='text-center font-semibold font-antic py-4 mb-4 bg-gray-100'>SERVICES</h2>
               <ul>
-                <li className='font-roboto text-gray-400 flex items-center gap-4 pb-4 border-b-[1px] border-gray-300'><div><FaDotCircle size={10} color='#D7A477'/></div>Corporate</li>
-                <li className='font-roboto text-gray-400 flex items-center gap-4 py-4 border-b-[1px] border-gray-300'><div><FaDotCircle size={10} color='#D7A477'/></div> Corporate</li>
-                <li className='font-roboto text-gray-400 flex items-center gap-4 py-4 border-b-[1px] border-gray-300'><div><FaDotCircle size={10} color='#D7A477'/></div> Corporate</li>
-                <li className='font-roboto text-gray-400 flex items-center gap-4 pt-4'><div><FaDotCircle size={10} color='#D7A477'/></div> Corporate</li>
+                <li>
+                  <Link to={'/corporateevents'}><p className='font-roboto text-gray-400 flex items-center gap-4 pb-4 border-b-[1px] border-gray-300'><div><FaDotCircle size={10} color='#D7A477'/></div>Corporate</p></Link>
+                </li>
+                <li>
+                  <Link to={'/roadsshows'}><p className='font-roboto text-gray-400 flex items-center gap-4 py-4 border-b-[1px] border-gray-300'><div><FaDotCircle size={10} color='#D7A477'/></div>Road Shows</p></Link>
+                </li>
+                <li>
+                  <Link to={'/mallactivities'}><p className='font-roboto text-gray-400 flex items-center gap-4 py-4 border-b-[1px] border-gray-300'><div><FaDotCircle size={10} color='#D7A477'/></div>Mall Activities</p></Link>
+                </li>
+                <li>
+                  <Link to={'/weddings'}><p className='font-roboto text-gray-400 flex items-center gap-4 pt-4'><div><FaDotCircle size={10} color='#D7A477'/></div>Weddings</p></Link>
+                </li>
               </ul>
             </div>
             <div className='lg:mt-16 mb-16' data-aos="blur-in" data-aos-once>
@@ -32,7 +43,7 @@ const Weddings = () => {
               <p className='font-roboto text-gray-500 '>Our mission statement is every great event starts with organized details while executing them brilliantly! Chic offers a variety of options to assist in making your wedding as perfect as you have imagined it! Whether it assisting with decor, full wedding planning or consulting that you need, we customize our packages to your needs. Let us help you so that you can enjoy your day! We travel and are not limited to just Guwahati. We are happy to come to you</p>
             </div>
             <div className='my-6' data-aos="blur-in" data-aos-once>
-              <img src="/assets/banner_dummy2.jpg" className='h-[80vh] w-[100%] object-cover' alt="" />
+              <img src="/images/weddings/07.jpeg" className='h-[80vh] w-[100%] object-cover' alt="" />
             </div>
             <div  data-aos="blur-in" data-aos-once>
               <p className='font-roboto text-gray-500 mb-2'>Even if we have an idea of what the you wants or we have planned hundreds of similar events before, the first step is having a one on one conversation with you to find out what you wants or what you would like to accomplish during the event. During this meeting, take notes of all the logistics such as the time, desired location, date and any other key points. In addition, listen to your ideas for the catering, color scheme, theme and other visual elements they would like for the event.</p>

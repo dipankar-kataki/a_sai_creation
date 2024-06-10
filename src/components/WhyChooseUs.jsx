@@ -5,7 +5,7 @@ const WhyChooseUs = () => {
   return (
     <section className='flex lg:flex-row flex-col items-center justify-center gap-4 lg:gap-16 bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/assets/background_gray.jpg")] bg-cover px-4 md:px-16 pb-8 lg:pb-0 mt-24'>
         <div>
-            <img src="/assets/banner_dummy.jpg" className='lg:w-[30vw] lg:h-[90vh] my-8 object-cover' alt="" data-aos="blur-in" data-aos-once />
+            <img src="/images/Home/slider_2.jpeg" loading='lazy' className='lg:w-[30vw] lg:h-[90vh] my-8 object-cover' alt="" data-aos="blur-in" data-aos-once />
         </div>
         <div className='lg:w-[50vw] text-white'  data-aos="blur-in" data-aos-once>
             <h2 className='font-antic text-4xl mb-6 text-center'>Why Choose Us?</h2>

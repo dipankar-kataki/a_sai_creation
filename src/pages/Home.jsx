@@ -7,6 +7,7 @@ import WorkFlow from '../components/WorkFlow'
 import Footer from '../components/Footer'
 import InquiryForm from '../components/InquiryForm'
 import WhyChooseUs from '../components/WhyChooseUs'
+import ServicesPoints from '../components/ServicesPoints'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <Slider/>
         <HomeAbout/>
         <WhyChooseUs/>
+        <ServicesPoints/>
         <ServicesSlide/>
         <WorkFlow/>
         <InquiryForm/>

@@ -6,19 +6,30 @@ import Appointment from '../components/Appointment'
 import { FaDotCircle } from "react-icons/fa";
 import Button from '../components/Button'
 import InquiryForm from '../components/InquiryForm'
+import { Link } from 'react-router-dom'
 const CorporateEvents = () => {
   return (
     <>
-        <EventHeader title={'Corporate Events'}/>
+         <div className={`h-[60vh] font-antic text-4xl text-white flex justify-center items-center bg-[linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url("/images/corporateevents/01.jpg")] bg-cover bg-center`}>
+          <h1>Corporate Events</h1>
+        </div>
         <div className='px-4 lg:px-8 pt-16 pb-8 flex lg:flex-row flex-col-reverse gap-12'>
           <section className='lg:w-[20vw] w-full lg:block flex flex-col-reverse'>
             <div  data-aos="blur-in" data-aos-once>
               <h2 className='text-center font-semibold font-antic py-4 mb-4 bg-gray-100'>SERVICES</h2>
               <ul>
-                <li className='font-roboto text-gray-400 flex items-center gap-4 pb-4 border-b-[1px] border-gray-300'><div><FaDotCircle size={10} color='#D7A477'/></div>Corporate</li>
-                <li className='font-roboto text-gray-400 flex items-center gap-4 py-4 border-b-[1px] border-gray-300'><div><FaDotCircle size={10} color='#D7A477'/></div> Corporate</li>
-                <li className='font-roboto text-gray-400 flex items-center gap-4 py-4 border-b-[1px] border-gray-300'><div><FaDotCircle size={10} color='#D7A477'/></div> Corporate</li>
-                <li className='font-roboto text-gray-400 flex items-center gap-4 pt-4'><div><FaDotCircle size={10} color='#D7A477'/></div> Corporate</li>
+                <li>
+                  <Link to={'/corporateevents'}><p className='font-roboto text-gray-400 flex items-center gap-4 pb-4 border-b-[1px] border-gray-300'><div><FaDotCircle size={10} color='#D7A477'/></div>Corporate</p></Link>
+                </li>
+                <li>
+                  <Link to={'/roadsshows'}><p className='font-roboto text-gray-400 flex items-center gap-4 py-4 border-b-[1px] border-gray-300'><div><FaDotCircle size={10} color='#D7A477'/></div>Road Shows</p></Link>
+                </li>
+                <li>
+                  <Link to={'/mallactivities'}><p className='font-roboto text-gray-400 flex items-center gap-4 py-4 border-b-[1px] border-gray-300'><div><FaDotCircle size={10} color='#D7A477'/></div>Mall Activities</p></Link>
+                </li>
+                <li>
+                  <Link to={'/weddings'}><p className='font-roboto text-gray-400 flex items-center gap-4 pt-4'><div><FaDotCircle size={10} color='#D7A477'/></div>Weddings</p></Link>
+                </li>
               </ul>
             </div>
             <div className='lg:mt-16 mb-16'  data-aos="blur-in" data-aos-once>
@@ -33,7 +44,7 @@ const CorporateEvents = () => {
               <p className='font-roboto text-gray-500 '>Planning an event for a corporate team is different from planning a stand-alone exhibition. From a tight budget to a failure to match the company’s mission, corporate event planners are always prepared to meet any of the numerous challenges in their path.</p>
             </div>
             <div className='my-6'  data-aos="blur-in" data-aos-once>
-              <img src="/assets/banner_dummy2.jpg" className='h-[80vh] w-[100%] object-cover' alt="" />
+              <img src="/images/corporateevents/01.jpg" loading='lazy' className='h-[80vh] w-[100%] object-cover' alt="" />
             </div>
             <div  data-aos="blur-in" data-aos-once>
               <p className='font-roboto text-gray-500 mb-2'>Because it’s the company’s mission that matters the most, don’t start planning a corporate event by focusing on your own goals. Instead, invest your efforts into clarifying the message your client wants to communicate. Organise a group meeting with stakeholders, or discuss corporate event planning ideas during one-on-one discussions with the most influential person no later than 3 months before an event. The important thing to consider is that the people you’ll be having a meeting with won’t want to sacrifice hours to talk about everything and nothing. To make a dialogue truly meaningful, prepare a list in advance of questions you’d like to ask.</p>

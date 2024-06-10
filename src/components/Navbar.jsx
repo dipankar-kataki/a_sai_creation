@@ -8,9 +8,11 @@ const Navbar = () => {
 
   const navOpenHandler = () => {
     setNavOpen(true);
+    document.body.style.overflow = "hidden"
   }
   const navCloseHandler = () => {
     setNavOpen(false);
+    document.body.style.overflow = "auto"
 
   }
   return (
@@ -29,14 +31,15 @@ const Navbar = () => {
               <p className='flex items-center gap-[5px] cursor-pointer'>Events <div><FaAngleDown color='white'/></div></p>
               <div className='absolute top-6 py-4 px-4 w-[200px] rounded-md font-light text-black whitespace-nowrap bg-white shadow-md submenu'>
                 <ul className='flex flex-col gap-4'>
+                  <li><Link to={'/concerts'}>Concerts</Link></li>
                   <li><Link to={'/corporateevents'}>Corporate Events</Link></li>
-                  <li><Link to={'/roadshows'}>Road Shows</Link></li>
-                  <li><Link to={'/mallactivities'}>Mall Activities & RWA</Link></li>
+                  <li><Link to={'/mice'}>MICE</Link></li>
+                  <li><Link to={'/btlactivities'}>BTL Activities</Link></li>
                   <li><Link to={'/weddings'}>Weddings</Link></li>
                 </ul>
               </div>
             </li>
-            <li><a href="">Clients</a></li>
+            <li><Link to={"/clients"}>Clients</Link></li>
             <li><NavLink to={'/gallery'}>Our Work</NavLink></li>
             <li><NavLink to={'/contact'}>Contact Us</NavLink></li>
         </ul>
@@ -49,22 +52,23 @@ const Navbar = () => {
            <AiOutlineClose size={24}/>
           </button>
         <ul className='flex justify-center items-center gap-6 flex-col lg:hidden'>
-            <li><NavLink to={'/'}>Home</NavLink></li>
-            <li><NavLink to={'/about'}>About Us</NavLink></li>
+            <li><NavLink to={'/'} onClick={navCloseHandler}>Home</NavLink></li>
+            <li><NavLink to={'/about'} onClick={navCloseHandler}>About Us</NavLink></li>
             <li className='relative submenu_container'>
               <p className='flex items-center gap-[5px] cursor-pointer'>Events <div><FaAngleDown color='white'/></div></p>
               <div className='absolute top-6 py-4 px-4 w-[200px] rounded-md font-light text-black whitespace-nowrap bg-white shadow-md submenu'>
                 <ul className='flex flex-col gap-4'>
-                  <li><Link to={'/corporateevents'}>Corporate Events</Link></li>
-                  <li><Link to={'/roadshows'}>Road Shows</Link></li>
-                  <li><Link to={'/mallactivities'}>Mall Activities & RWA</Link></li>
-                  <li><Link to={'/weddings'}>Weddings</Link></li>
+                  <li><Link to={'/concerts'} onClick={navCloseHandler}>Concerts</Link></li>
+                  <li><Link to={'/corporateevents'} onClick={navCloseHandler}>Corporate Events</Link></li>
+                  <li><Link to={'/mice'} onClick={navCloseHandler}>MICE</Link></li>
+                  <li><Link to={'/btlactivities'} onClick={navCloseHandler}>BTL Activities</Link></li>
+                  <li><Link to={'/weddings'} onClick={navCloseHandler}>Weddings</Link></li>
                 </ul>
               </div>
             </li>
-            <li><a href="">Clients</a></li>
-            <li><NavLink to={'/gallery'}>Our Work</NavLink></li>
-            <li><NavLink to={'/contact'}>Contact Us</NavLink></li>
+            <li><NavLink to={'/clients'} onClick={navCloseHandler}>Clients</NavLink></li>
+            <li><NavLink to={'/gallery'} onClick={navCloseHandler}>Our Work</NavLink></li>
+            <li><NavLink to={'/contact'} onClick={navCloseHandler}>Contact Us</NavLink></li>
         </ul>
         </div>
          }

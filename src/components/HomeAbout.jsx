@@ -15,7 +15,7 @@ const HomeAbout = () => {
     <div className='max-w-[1500px] m-auto'>
       <section className='flex lg:flex-row flex-col items-center justify-center gap-8 lg:gap-24 bg-[#FEFDFD]'  >
           <div className='w-[90vw] lg:w-[35vw] lg:max-w-[600px] overflow-hidden mt-[-60px] border-white border-[10px] z-[2]'>
-            <img src="/assets/banner_dummy.jpg" className='w-full h-[600px] object-cover lg:max-w-[600px]' alt=""  data-aos="blur-in" data-aos-once/>
+            <img src="/images/Home/about_1.jpeg" loading='lazy' className='w-full h-[600px] object-cover lg:max-w-[600px]' alt=""  data-aos="blur-in" data-aos-once/>
           </div>
           <div>
             <h2 className='w-[80vw] lg:w-[400px] font-thin text-5xl text-center leading-[3.5rem] font-antic text-gray-700'  data-aos="blur-in" data-aos-once>We take care of preparation, you enjoy the celebration!</h2>
@@ -29,7 +29,7 @@ const HomeAbout = () => {
             <Button clickHandler={clickHandler}>GET STARTED</Button>
           </div>
           <div className='relative'>
-            <img src="/assets/banner_dummy2.jpg" className='w-[80vw] lg:w-[400px] h-[200px] object-cover' alt="" data-aos="blur-in" data-aos-once />
+            <img src="/images/Home/about_2.jpeg" loading='lazy' className='w-[80vw] lg:w-[400px] h-[200px] object-cover' alt="" data-aos="blur-in" data-aos-once />
             <div className='absolute top-4 left-4 w-[100%] h-[100%] '></div>
           </div>
           
